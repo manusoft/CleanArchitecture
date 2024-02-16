@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
+using MyApp.Application;
 using MyApp.Components;
 using MyApp.Components.Account;
 using MyApp.Infrastructure;
@@ -19,6 +20,8 @@ builder.Services.AddScoped<AuthenticationStateProvider, IdentityRevalidatingAuth
 builder.Services.AddInfrastructureService(builder.Configuration);
 
 builder.Services.AddSingleton<IEmailSender<ApplicationUser>, IdentityNoOpEmailSender>();
+
+builder.Services.AddApplicationService();
 
 var app = builder.Build();
 
