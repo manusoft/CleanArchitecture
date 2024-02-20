@@ -2,6 +2,8 @@
 
 The Onion Architecture is a software architectural pattern that emphasizes the separation of concerns within an application. It was introduced by Jeffrey Palermo and is particularly popular in the .NET ecosystem. The Onion Architecture is based on the principles of dependency inversion and the single responsibility principle.
 
+![Project_Layers](https://github.com/manusoft/CleanArchitecture/assets/83714923/8bbce9d8-77e6-4694-895f-3d61726bc0c7)
+
 The architecture is composed of several layers, each representing a different level of abstraction and responsibility. These layers are typically arranged in concentric circles, resembling the layers of an onion. The layers include:
 
 1. **Outermost Layer (UI Layer or Presentation Layer)**:
